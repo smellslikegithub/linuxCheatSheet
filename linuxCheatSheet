@@ -1,0 +1,25 @@
+Some linux Commands cheatsheet
+
+To remove a repo:
+
+	1. repos list usually stays in the /etc/apt folder under the file sources.lists
+	2. to remove a repos for example with a name http://ppa.launchpad.net/shutter/ppa/ubuntu 
+	3. sudo apt-add-repository -r ppa:shutter/ppa
+	4. sudo apt update -q
+
+To create an alias in linux
+	1. Go to the root directory and open the .bashrc file.
+	2. inside type 
+	alias = prefferedAliasName="the command you want to run"
+
+To restart the plasma desktop enviornment "Gracefully"
+	1. sudo kquitapp5 plasmashell
+	2. sudo kstart5 plasmashell   
+
+To setup sstp client
+
+    1. $ sudo add-apt-repository ppa:eivnaes/network-manager-sstp
+...
+    2. $ sudo apt-get update
+    3. $ sudo apt-get install sstp-client
+    4. $ sudo apt-get install network-manager-sstp-gnome # NM configuration GUI
